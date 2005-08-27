@@ -48,5 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %{_sysconfdir}/X11/app-defaults/B4light
-%attr(755,root,wheel) %{_bindir}/beforelight
+%attr(755,root,root) %{_bindir}/beforelight
 %{_mandir}/man1/*.1*
