@@ -1,20 +1,20 @@
 Summary:	beforelight application
 Summary(pl):	Aplikacja beforelight
 Name:		xorg-app-beforelight
-Version:	0.99.0
-Release:	0.02
+Version:	0.99.1
+Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/X11R7.0-RC0/app/beforelight-%{version}.tar.bz2
-# Source0-md5:	d967a9155ee3da48b9c916b0d652009f
-Patch0:		beforelight-man.patch
+Source0:	http://xorg.freedesktop.org/releases/X11R7.0-RC1/app/beforelight-%{version}.tar.bz2
+# Source0-md5:	d0e7ed3f2839c88975475d4fedd7f904
+#Patch0:		beforelight-man.patch
 URL:		http://xorg.freedesktop.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-lib-libXScrnSaver-devel
 BuildRequires:	xorg-lib-libXaw-devel
-BuildRequires:	xorg-util-util-macros
+BuildRequires:	xorg-util-util-macros >= 0.99.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,7 +25,6 @@ Aplikacja beforelight.
 
 %prep
 %setup -q -n beforelight-%{version}
-%patch0 -p1
 
 %build
 %{__aclocal}
@@ -40,13 +39,15 @@ Aplikacja beforelight.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	appmandir=%{_mandir}/man1
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%{_sysconfdir}/X11/app-defaults/B4light
+%doc ChangeLog
 %attr(755,root,root) %{_bindir}/beforelight
-%{_mandir}/man1/*.1*
+%{_libdir}/X11/app-defaults/Beforelight
+%{_mandir}/man1/*.1x*
