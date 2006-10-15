@@ -2,10 +2,10 @@ Summary:	beforelight application
 Summary(pl):	Aplikacja beforelight
 Name:		xorg-app-beforelight
 Version:	1.0.1
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/beforelight-%{version}.tar.bz2
+Source0:	http://xorg.freedesktop.org/releases/individual/app/beforelight-%{version}.tar.bz2
 # Source0-md5:	d41bc287039503ece2b91373ef92f7a8
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
