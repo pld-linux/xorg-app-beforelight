@@ -50,4 +50,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc COPYING ChangeLog
 %attr(755,root,root) %{_bindir}/beforelight
 %{_datadir}/X11/app-defaults/Beforelight
-%{_mandir}/man1/*.1x*
+%{_mandir}/man1/beforelight.1x*
