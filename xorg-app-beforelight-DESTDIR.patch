@@ -1,0 +1,12 @@
+diff -urN beforelight-1.0.2.org/Makefile.am beforelight-1.0.2/Makefile.am
+--- beforelight-1.0.2.org/Makefile.am	2006-12-15 23:16:57.000000000 +0100
++++ beforelight-1.0.2/Makefile.am	2006-12-16 16:09:04.358443000 +0100
+@@ -33,7 +33,7 @@
+ 
+ # App default files  (*.ad)
+ 
+-appdefaultdir = $(DESTDIR)@appdefaultdir@
++appdefaultdir = @appdefaultdir@
+ 
+ EXTRA_DIST = \
+         Beforelight.ad
