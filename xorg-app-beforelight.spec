@@ -1,5 +1,5 @@
 Summary:	beforelight application - screen saver
-Summary(pl):	Aplikacja beforelight - wygaszacz ekranu
+Summary(pl.UTF-8):   Aplikacja beforelight - wygaszacz ekranu
 Name:		xorg-app-beforelight
 Version:	1.0.2
 Release:	1
@@ -23,9 +23,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The beforelight program is a sample implementation of a screen saver
 for X servers supporting the MIT-SCREEN-SAVER extension.
 
-%description -l pl
+%description -l pl.UTF-8
 Program beforelight to prosta implementacja wygaszacza ekranu dla
-serwerów X obs³uguj±cych rozszerzenie MIT-SCREEN-SAVER.
+serwerÃ³w X obsÅ‚ugujÄ…cych rozszerzenie MIT-SCREEN-SAVER.
 
 %prep
 %setup -q -n beforelight-%{version}
