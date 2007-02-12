@@ -1,5 +1,5 @@
 Summary:	beforelight application - screen saver
-Summary(pl.UTF-8):   Aplikacja beforelight - wygaszacz ekranu
+Summary(pl.UTF-8):	Aplikacja beforelight - wygaszacz ekranu
 Name:		xorg-app-beforelight
 Version:	1.0.2
 Release:	1
