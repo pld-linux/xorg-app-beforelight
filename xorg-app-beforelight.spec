@@ -1,18 +1,17 @@
 Summary:	beforelight application - screen saver
 Summary(pl.UTF-8):	Aplikacja beforelight - wygaszacz ekranu
 Name:		xorg-app-beforelight
-Version:	1.0.4
+Version:	1.0.5
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/beforelight-%{version}.tar.bz2
-# Source0-md5:	e248acedcc95d44bdd140bdb861fdcee
+# Source0-md5:	d587e2e64d63d0a33e7e911727f9ebd4
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-lib-libXScrnSaver-devel
-BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-lib-libXt-devel >= 1.0.0
 BuildRequires:	xorg-util-util-macros >= 1.8
 Requires:	xorg-lib-libXt >= 1.0.0
